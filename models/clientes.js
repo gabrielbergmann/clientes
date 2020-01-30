@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
 	},
     nome: DataTypes.STRING,
     cpf: DataTypes.STRING
-  }, {});
+  }, {
+
+  	timestamps:false
+  });
   clientes.associate = function(models) {
     // associations can be defined here
   };
